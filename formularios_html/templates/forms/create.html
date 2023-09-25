@@ -1,0 +1,10 @@
+<form action="{% url 'postgoal' %}" method="POST">
+    <h3>Formulario de contacto, pal post</h3>
+
+    {% csrf_token %}
+
+    <input type="text" name="info" placeholder="Escriba algo bro...">
+
+    <input type="submit" value="Enviar">
+
+</form>
